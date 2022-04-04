@@ -1,0 +1,37 @@
+.header{
+    color: #fff;
+    width: 700px;
+    position: relative;
+    top: 90px;
+    margin: auto;
+    height: 250px;
+    text-align: center;
+   
+}
+.title{
+    padding: 20px;
+}
+.description{
+    color: #B6B6B6;
+    width: 450px;
+    position: relative;
+    margin: auto;
+  
+}
+.button{
+    width: 140px;
+    position: relative;
+    top: 25px;
+    margin: auto;
+}
+@media screen and (max-width: 960px) {
+    .header{
+        width: 100%;
+    }
+    .title{
+        width: 100%;
+    }
+    .description{
+        width: 300px;
+    }
+}

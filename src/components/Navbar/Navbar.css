@@ -1,0 +1,128 @@
+.NavbarItems {
+  height: 80px;
+  /* background-color: brown; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.navbar-logo-span {
+  color: #0fae96;
+}
+
+.navbar-logo {
+  color: #fff;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: center;
+  margin-right: 2rem;
+}
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+}
+.nav-links:hover {
+  color: #0fae96;
+}
+
+.lalo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #fff;
+  margin-left: 10px;
+}
+.language {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  padding: 10px;
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #fff;
+}
+.lan {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 3px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.menu-icon {
+  color: #fff;
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: linear-gradient(to right, #000000, #210835, #511281);
+    border-bottom: 1px solid #511281;
+    background-size: 400% 400%;
+    animation: animate-background 10s infinite ease-in-out;
+
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-links {
+      margin-bottom: 20px;
+    text-align: center;
+    /* padding: 1.5rem; */
+    width: 100%;
+    display: block;
+  }
+  .navbar-logo {
+    position: relative;
+    top: 0;
+    left: -30px;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    transform: translate(-100%, 100%);
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  .lalo {
+    position: relative;
+    left: -30px;
+    font-size: 1rem;
+    /* padding: 10px; */
+   
+  }
+  .nav-links:hover {
+    color: #0fae96;
+  }
+}
