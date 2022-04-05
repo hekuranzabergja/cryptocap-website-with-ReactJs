@@ -10,7 +10,7 @@
 .card {
   color: #fff;
   width: 20rem;
-  height: 10rem;
+  height: 12rem;
   border-radius: 18px;
   position: relative;
   z-index: 1;
@@ -30,6 +30,29 @@
   margin: -20px;
 }
 
+.cryptoname{
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+
+}
+.cryptovalue{
+  padding: 15px;
+
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+
+}
+.crypto-icon-state{
+  text-align: center;
+  transform: rotate(45deg);
+}
+.break{
+  width: 90%;
+ margin-left: 15px;
+}
 @media screen and (max-width: 960px) {
   .card0 {
     margin: auto;
