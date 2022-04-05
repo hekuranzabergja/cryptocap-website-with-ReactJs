@@ -13,7 +13,7 @@ const Card = (props) => {
               <div className="cryptoname">
                 <img src={item.img} alt={item.name}></img>
                 <p>{item.shortname}</p>
-                <p>{item.name}</p>
+                <p className="cryptoname1">{item.name}</p>
                 <div className="crypto-icon-state">
                   {item.percentage < 0 ? (
                     <span className="red">
