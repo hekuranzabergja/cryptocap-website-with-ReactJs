@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.css";
 import { CardData } from "./CardData";
-import {AiOutlineArrowUp} from"react-icons/ai"
+import { AiOutlineArrowUp, AiOutlineArrowDown } from "react-icons/ai";
 const Card = (props) => {
   return (
     <div>
@@ -14,18 +14,28 @@ const Card = (props) => {
                 <img src={item.img} alt={item.name}></img>
                 <p>{item.shortname}</p>
                 <p>{item.name}</p>
-               <div className="crypto-icon-state">
-               <AiOutlineArrowUp/>
-               </div>
+                <div className="crypto-icon-state">
+                  {item.percentage < 0 ? (
+                    <span className="red">
+                      {" "}
+                      <AiOutlineArrowDown />
+                    </span>
+                  ) : (
+                    <span className="green">
+                      {" "}
+                      <AiOutlineArrowUp />
+                    </span>
+                  )}
+                </div>
               </div>
               <div className="break">
-                <hr/>
+                <hr />
               </div>
               <div className="cryptovalue">
-              <p>{item.value}</p>
-              <img src={item.chart} alt={item.name}></img>
+                <p>{item.value}</p>
+                <img src={item.chart} alt={item.name}></img>
 
-              <p>{item.percentage}</p>
+                <p>{item.percentage + "%"}</p>
               </div>
             </div>
           );

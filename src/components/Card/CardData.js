@@ -1,12 +1,12 @@
 export const CardData = [
   {
     img: require("../Images/bitcoin.png"),
-    chart: require("../Images/chart.png"),
+    chart: require("../Images/chart-bitcoin.png"),
 
     shortname: "BTC",
     name: "Bitcoin",
     value: "$56,623.54",
-    percentage: "1.43%",
+    percentage: 1.43 
   },
 
   {
@@ -16,7 +16,7 @@ export const CardData = [
     shortname: "ETH",
     name: "Ethereum",
     value: "$56,623.54",
-    percentage: "1.43%",
+    percentage: -2.36
   },
 
   {
@@ -36,6 +36,6 @@ export const CardData = [
     shortname: "USDT",
     name: "Tether",
     value: "$56,623.54",
-    percentage: "1.43%",
+    percentage: -3.23,
   },
 ];
