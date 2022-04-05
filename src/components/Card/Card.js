@@ -1,12 +1,21 @@
-import React from 'react'
-import './Card.css'
+import React from "react";
+import "./Card.css";
+import { CardData } from "./CardData";
 
-const Card = () => {
+const Card = (props) => {
   return (
-    <div className='card'>
-
+    <div className="card0" >
+      {CardData.map((item, index) => {
+        return (
+          <div className="card">
+            <div key={index}>
+              <p>{item.name}</p>
+            </div>
+          </div>
+        );
+      })}
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
