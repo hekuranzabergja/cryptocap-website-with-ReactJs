@@ -17,10 +17,8 @@ export const FeaturesCard = (props) => {
               <p className="featuresDescription">{item.content}</p>
             </div>
             <div className="seeMoreFeatures">
-              <button className="featureButton">{item.buttonType}</button>
-              <div className="arrowfeature">
-              <AiOutlineArrowRight/>
-              </div>
+              <button className="featureButton">{item.buttonType} <AiOutlineArrowRight/></button>
+        
             </div>
           </div>
         );

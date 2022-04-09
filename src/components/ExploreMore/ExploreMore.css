@@ -1,0 +1,47 @@
+.exploreMore {
+  display: flex;
+  color: #fff;
+  width: 80%;
+  position: relative;
+  top: 90px;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  justify-content: space-between;
+  color: #fff;
+
+  border-radius: 18px;
+  border: 1px solid rgba(182, 182, 182, 0.1);
+  padding: 25px;
+}
+.exploreTitle{
+    color: #ECF1F0;
+    font-size: 1.2rem;
+    
+}
+.exploreDescription{
+    /* width: 500px; */
+    color: #B6B6B6;
+    margin-top: 20px;
+}
+.exploreButton{
+    margin: auto;
+    padding: auto;
+}
+
+@media screen and (max-width: 960px) {
+    .exploreMore{
+        width: 80%;
+        display: block ;
+    }
+    .exploreTitle{
+        width: 100%;
+    }
+    .exploreDescription{
+        width: 300px;
+    }
+    .exploreButton{
+        margin-top: 20px;
+    }
+    
+}

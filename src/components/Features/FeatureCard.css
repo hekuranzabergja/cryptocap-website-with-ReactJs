@@ -32,7 +32,7 @@
 }
 
 .featuresImage {
-  margin-left: 20px;
+  margin-left: 11px;
   margin-top: 20px;
 }
 .featuresTitle {
@@ -44,10 +44,9 @@
 margin-top: 20px;
 margin-left: 10px;
 color: #B6B6B6;
+height: 50px;
 }
-.seeMoreFeatures{
-  display: flex;
-}
+
 .featureButton{
   font: inherit;
   padding:12px;

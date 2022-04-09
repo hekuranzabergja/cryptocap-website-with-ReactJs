@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Card from "./components/Card/Card";
 import { Features } from "./components/Features/Features";
 import { FeaturesCard } from "./components/Features/FeaturesCard";
+import { ExploreMore } from "./components/ExploreMore/ExploreMore";
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
       <Card/>
       <Features/>
       <FeaturesCard/>
-      {/* <Features/> */}
+       <ExploreMore/>
 
     </div>
   );
