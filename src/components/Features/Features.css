@@ -1,23 +1,20 @@
-.header{
+.features{
     color: #fff;
     width: 700px;
     position: relative;
     top: 90px;
     margin: auto;
-    padding: auto;
     height: 250px;
     text-align: center;
    
 }
-.title{
+.feature-title{
     padding: 20px;
 }
-.description{
+.feature-description{
     color: #B6B6B6;
-    width: 450px;
     position: relative;
     margin: auto;
-    padding: auto;
   
 }
 .button{
@@ -25,16 +22,15 @@
     position: relative;
     top: 25px;
     margin: auto;
-    padding: auto;
 }
 @media screen and (max-width: 960px) {
-    .header{
+    .features{
         width: 100%;
     }
-    .title{
+    .feature-title{
         width: 100%;
     }
-    .description{
-        width: 300px;
+    .feature-description{
+        width: 290px;
     }
 }

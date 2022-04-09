@@ -1,7 +1,7 @@
 .card0 {
   margin: auto;
   padding: auto;
-  margin-top: 20%;
+  margin-top: 12%;
   width: 80%;
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -95,9 +95,26 @@
     margin: auto;
     padding: auto;
     margin-top: 30px;
-    margin-left: -10px;
+    /* margin-left: -10px; */
+  }
+  .content{
+    position: absolute;
+    margin-top: 100px;
+    color: black;
+    font-size: 1.2rem;
+   max-width: 100%;
+  
+
   }
 }
-.pp{
-    color: #fff;
+
+
+.content{
+  color: #ECF1F0;
+  position: absolute;
+  margin-top: -55px;
+  margin-left: 162px;
+  padding: 10px;
+  font-size: 1.3rem;
 }
+

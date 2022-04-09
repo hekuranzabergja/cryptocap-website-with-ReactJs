@@ -14,7 +14,11 @@
   .button:focus {
     outline: none;
   }
- 
+
+  .featureButton{
+    background-color: transparent;
+  }
+
   
  
   

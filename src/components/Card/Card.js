@@ -5,7 +5,7 @@ import { AiOutlineArrowUp, AiOutlineArrowDown } from "react-icons/ai";
 const Card = (props) => {
   return (
     <div>
-      <p>Market Trade</p>
+      {/* <p className="content">Market Trade</p> */}
       <div className="card0">
         {CardData.map((item, index) => {
           return (

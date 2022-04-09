@@ -1,0 +1,80 @@
+.featureCard {
+  margin: auto;
+  padding: auto;
+  margin-top: 2%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 2px;
+}
+
+.featureContent {
+  color: #fff;
+  width: 20rem;
+  height: auto;
+  border-radius: 18px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: 1px solid rgba(182, 182, 182, 0.1);
+  padding: 20px;
+}
+.featureContent::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(182, 182, 182, 0.02);
+  margin: -20px;
+}
+
+.featuresImage {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.featuresTitle {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+.featuresDescription{
+margin-top: 20px;
+margin-left: 10px;
+color: #B6B6B6;
+}
+.seeMoreFeatures{
+  display: flex;
+}
+.featureButton{
+  font: inherit;
+  padding:12px;
+  border: none;
+  color: #0FAE96;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.arrowfeature{
+  margin: auto;
+  padding: auto;
+  margin-left: -9px;
+}
+
+@media screen and (max-width: 960px) {
+  .featureCard {
+    margin: auto;
+    padding: auto;
+    margin-top: 100px;
+    width: 80%;
+    display: block;
+  }
+  .featureContent {
+    color: #fff;
+    margin: auto;
+    padding: auto;
+    margin-top: 30px;
+  }
+}
