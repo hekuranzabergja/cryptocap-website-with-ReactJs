@@ -31,15 +31,14 @@
 
 @media screen and (max-width: 960px) {
     .exploreMore{
-        width: 100%;
+        width: 80%;
         display: block ;
-        padding: 30px;
     }
     .exploreTitle{
         width: 100%;
     }
     .exploreDescription{
-        width: 300px;
+        width: 250px;
     }
     .exploreButton{
         margin-top: 20px;
